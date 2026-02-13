@@ -91,46 +91,53 @@
     }
 
     .message-card {
-        /* More transparent on mobile so gallery is visible */
-        background: rgba(0, 0, 0, 0.6); 
-        backdrop-filter: blur(6px);
-        -webkit-backdrop-filter: blur(6px);
-        padding: 30px 20px;
+        /* Increased transparency (0.5) and blur for better background visibility */
+        background: rgba(0, 0, 0, 0.5); 
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        padding: 20px; 
         border-radius: 20px;
-        border: 1px solid rgba(212, 175, 55, 0.3);
+        border: 1px solid rgba(212, 175, 55, 0.2);
         text-align: center;
-        width: 100%;
-        max-width: 500px;
-        box-shadow: 0 0 30px rgba(255, 0, 102, 0.4);
+        width: 85%; /* Narrower on mobile */
+        max-width: 550px;
+        box-shadow: 0 0 30px rgba(255, 0, 102, 0.3);
         pointer-events: auto;
         color: white;
+        margin: auto;
     }
 
     h1 {
         color: var(--gold);
-        font-size: 1.8rem;
-        margin-bottom: 10px;
+        font-size: 1.5rem; /* Smaller title for mobile */
+        margin-bottom: 8px;
         text-shadow: 0 0 10px var(--gold);
     }
 
     .message {
-        font-size: 0.9rem;
-        line-height: 1.5;
-        margin-bottom: 20px;
+        font-size: 0.85rem; /* Smaller text to keep the box short */
+        line-height: 1.4;
+        margin-bottom: 15px;
         font-weight: 300;
+        text-align: center;
     }
 
     .timer {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         font-weight: 600;
         color: var(--pink);
     }
 
-    /* DESKTOP TEXT SIZE */
+    /* DESKTOP ADJUSTMENTS */
     @media (min-width: 600px) {
+        .message-card {
+            padding: 40px;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7); /* Slightly darker on desktop */
+        }
         h1 { font-size: 2.5rem; }
-        .message { font-size: 1.1rem; }
-        .message-card { padding: 40px; background: rgba(0, 0, 0, 0.75); }
+        .message { font-size: 1.05rem; line-height: 1.6; }
+        .timer { font-size: 1.5rem; }
     }
 
     .heart {
@@ -163,11 +170,10 @@
     <b>To my absolute best friend —</b><br><br>
     Happy Birthday to the person who has been my constant through every high and low. 
     
-    <b>My wishes for you this year:</b><br>
-    ✨ That you achieve every goal you've been working toward.<br>
-    ✨ That you stay surrounded by people who truly value your heart.<br>
-    ✨ That you find peace in the chaos and joy in the small things.<br>
-    ✨ And that you never forget how much of a blessing you are to those around you.<br><br>
+    <b>My Wishes for You:</b><br>
+        ✨ Reach every goal you've set.<br>
+        ✨ Stay surrounded by people who value you.<br>
+        ✨ Find joy in every small moment.<br><br>
     
     You deserve a year as incredible as the impact you've had on my life. 
     I’m lucky to have you in my corner. 🖤✨
